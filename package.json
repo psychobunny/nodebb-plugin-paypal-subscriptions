@@ -1,0 +1,29 @@
+{
+  "name": "nodebb-plugin-paypal-subscriptions",
+  "version": "0.0.1",
+  "description": "Monetize your forum with paid subscription-based access to certain categories",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-plugin-paypal-subscriptions"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "paypal",
+    "subscriptions",
+    "monetization"
+  ],
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-plugin-paypal-subscriptions/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  }
+}
