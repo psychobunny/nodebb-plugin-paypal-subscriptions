@@ -10,6 +10,7 @@ plugin.init = function(params, callback) {
 		hostControllers = params.controllers;
 
 	router.get('/admin/plugins/paypal-subscriptions', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
+	router.post('/api/admin/plugins/paypal-subscriptions/ipn/:sandbox', controllers.instantPaypalNotification);
 	router.get('/api/admin/plugins/paypal-subscriptions', controllers.renderAdminPage);
 
 	callback();
