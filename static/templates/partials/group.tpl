@@ -96,7 +96,7 @@
 		<div class="col-sm-3 col-xs-12">
 			<div class="form-group">
 				<label>Removal Behvaior</label>
-				<select class="form-control subscription-behavior" data-topictimestamp="{subscription.endBehavior}">
+				<select class="form-control subscription-behavior" data-endbehavior="{subscription.endBehavior}">
 					<option value="blocked">Removed Until Paid</option>
 					<option value="grace">Grace Period</option>
 				</select>
