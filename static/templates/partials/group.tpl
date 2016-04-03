@@ -19,7 +19,7 @@
 			<div class="col-sm-2 col-xs-12">
 				<div class="form-group">
   				<label>Grace Interval</label>
-  				<select class="form-control subscription-interval" data-interval="{subscription.graceinterval}">
+  				<select class="form-control subscription-grace-interval" data-interval="{subscription.graceinterval}">
   				  <option value="minute">Minutes</option>
   					<option value="hour">Hours</option>
   					<option value="day">Days</option>
