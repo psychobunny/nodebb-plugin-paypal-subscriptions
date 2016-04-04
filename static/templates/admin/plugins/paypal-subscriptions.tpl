@@ -161,7 +161,7 @@
 				confirmKeys: [13, 44]
 			});
 		}
-		enableAutoComplete($('.groups .subscription-admin));
+		enableAutoComplete($('.groups .subscription-admin'));
 		/*enableTagsInput($('.feeds .feed-tags'));*/
 	});
 </script>
