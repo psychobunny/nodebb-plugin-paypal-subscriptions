@@ -89,7 +89,7 @@
 		<div class="col-sm-2 col-xs-12">
 			<div class="form-group">
 				<label># Intervals / Default Subscription</label>
-				<input type="text" class="form-control subscription-length" placeholder="How many payment intervals does a subscription last?" value="{subscription.entriesToPull}">
+				<input type="text" class="form-control subscription-length" placeholder="How many payment intervals does a subscription last?" value="{subscription.length}">
 			</div>
 		</div>
 
