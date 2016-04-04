@@ -68,7 +68,7 @@
 		<div class="col-sm-2 col-xs-12">
 			<div class="form-group">
 				<label>Pay</label>
-				<input type="text" class="form-control subscription-cost" placeholder="Renewal cost of subscription" value="{subscription.entriesToPull}">
+				<input type="text" class="form-control subscription-cost" placeholder="Renewal cost of subscription" value="{subscription.cost}">
 			</div>
 		</div>
 
