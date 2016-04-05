@@ -22,11 +22,17 @@ var async = module.parent.require('async'),
 	var settings = {};
 	
 	/*Make sensible cron jobs*/
-	cronJobs.push(new cron('* * * * * *', function() { pullGroupsInterval('seconds'); }, null, false));
+	cronJobs.push(new cron('* * * * * *', function() { pullGroupsInterval('second'); }, null, false));
+	cronJobs.push(new cron('00 * * * * *', function() { pullGroupsInterval('minute'); }, null, false));
 	cronJobs.push(new cron('00 00 0-23 * * *', function() { pullGroupsInterval('hour'); }, null, false));
+	/*cronJobs.push(new cron('00 00 * * * *', function() { pullGroupsInterval('hour'); }, null, false));*/
 	cronJobs.push(new cron('00 00 00 * * 0-6', function() { pullGroupsInterval('day'); }, null, false));
+	/*cronJobs.push(new cron('00 00 00 * * *', function() { pullGroupsInterval('day'); }, null, false));*/
 	cronJobs.push(new cron('00 00 00 * * 0', function() { pullGroupsInterval('week'); }, null, false));
 	cronJobs.push(new cron('00 00 00 1 0-11 *', function() { pullGroupsInterval('month'); }, null, false));
+	/*cronJobs.push(new cron('00 00 00 1 * *', function() { pullGroupsInterval('month'); }, null, false));*/
+	cronJobs.push(new cron('00 00 00 1 0 *', function() { pullGroupsInterval('year'); }, null, false));
+	
 
 	plugins.isActive('nodebb-plugin-paypal-subscriptions', function(err, active) {
 		if (err) {
