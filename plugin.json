@@ -8,6 +8,9 @@
 		},
 		{
 			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:user.customSettings", "method": "addSubscriptionSettings"
 		}
 	],
 	"staticDirs": {
