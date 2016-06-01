@@ -28,5 +28,11 @@ $('document').ready(function() {
 				});
 			});
 		}
+
+		if (ajaxify.currentPage.match('topic/') && !ajaxify.data.tid) {
+			ajaxify.go('subscribe');
+		} else if (ajaxify.currentPage.match('category/') && !ajaxify.data.cid) {
+			ajaxify.go('subscribe');
+		}
 	});
 });
