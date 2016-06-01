@@ -39,8 +39,19 @@
 			</div>
 		</div>
 	</div>
-</form>
 
+	<div class="row">
+		<div class="col-sm-2 col-xs-12 settings-header">Premium Group</div>
+		<div class="col-sm-10 col-xs-12">
+			<label for="premium-group">Add premium members to this group:</label><br />
+			<select name="premium-group" id="premium-group" class="form-control">
+				<!-- BEGIN groups -->
+				<option value="{groups.value}">{groups.name}</option>
+				<!-- END groups -->
+			</select><br /><br />
+		</div>
+	</div>
+</form>
 <button id="save" class="floating-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 	<i class="material-icons">save</i>
 </button>
