@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-paypal-subscriptions",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Monetize your forum with paid subscription-based access to certain categories",
   "main": "library.js",
   "repository": {
