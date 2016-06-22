@@ -2,6 +2,7 @@
 
 var controllers = require('./lib/controllers'),
 	paypal = require('./lib/paypal'),
+	nconf = require('nconf'),
 
 	plugin = {};
 
@@ -48,6 +49,19 @@ plugin.addSubscriptionSettings = function(data, callback) {
 
 		callback(null, data);
 	});
+};
+
+plugin.redirectToSubscribe = function(data, callback) {
+	if (!data.req.uid || (!data.req.path.match('/topic') && !data.req.path.match('/category'))) {
+		return callback(false, data);
+	}
+
+	var url = nconf.get('relative_path') + '/subscribe';
+	if (data.res.locals.isAPI) {
+		data.res.status(308).json(url);
+	} else {
+		data.res.redirect(url);
+	}
 };
 
 module.exports = plugin;

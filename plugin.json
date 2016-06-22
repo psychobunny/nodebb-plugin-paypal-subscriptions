@@ -11,6 +11,9 @@
 		},
 		{
 			"hook": "filter:user.customSettings", "method": "addSubscriptionSettings"
+		},
+		{
+			"hook": "filter:helpers.notAllowed", "method": "redirectToSubscribe"
 		}
 	],
 	"staticDirs": {
