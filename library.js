@@ -2,7 +2,8 @@
 
 var controllers = require('./lib/controllers'),
 	paypal = require('./lib/paypal'),
-	nconf = require('nconf'),
+	nconf = module.parent.require('nconf'),
+	winston = module.parent.require('winston'),
 
 	plugin = {};
 
